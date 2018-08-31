@@ -37,24 +37,24 @@ wget https://cmake.org/files/v3.8/cmake-3.8.2.tar.gz
 
     (i). Point C and C++ compiler variables to the clang 3.5 C and C++ compilers, respectively.
 
-```
-sudo update-alternatives --install /usr/bin/cc cc /usr/bin/clang-3.5 100
-sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++-3.5 100
-```
+    ```
+    sudo update-alternatives --install /usr/bin/cc cc /usr/bin/clang-3.5 100
+    sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++-3.5 100
+    ```
 
     (ii). Create an alias for clang-3.5 C compiler such that it is pointed to by clang; same for the C++ compiler.
 
-```
-sudo ln -s /usr/bin/clang-3.5 /usr/bin/clang
-sudo ln -s /usr/bin/clang++-3.5 /usr/bin/clang++
-```
+    ```
+    sudo ln -s /usr/bin/clang-3.5 /usr/bin/clang
+    sudo ln -s /usr/bin/clang++-3.5 /usr/bin/clang++
+    ```
 
     (iii). For CMake to use the clang 3.5 compilers when building HELICS, add the paths of the clang C and C++ compilers to variables CC and CXX.
 
-```
-export CC=/usr/bin/clang
-export CXX=/usr/bin/clang++
-```
+    ```
+    export CC=/usr/bin/clang
+    export CXX=/usr/bin/clang++
+    ```
 
 3. Build Boost 1.65.1 libraries with clang using the following instructions:
 
@@ -64,9 +64,9 @@ export CXX=/usr/bin/clang++
 
     (iii). Go to the folder with the extracted boost source files, and run:
 
-```
-./bootstrap.sh --prefix=/home/vagrant/local/ --with-toolset=clang
-```
+    ```
+    ./bootstrap.sh --prefix=/home/vagrant/local/ --with-toolset=clang
+    ```
 
     By specifying the toolset as clang, bootstrap is forced to use the clang compiler instead of the default gcc compiler.
 
