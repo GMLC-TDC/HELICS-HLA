@@ -1,0 +1,73 @@
+The configuration files for running the HELICS-HLA example are available in the `Configuration Files` folder of this repository.
+These files include:
+
+1. `HelicsGatewayImplementation.json`
+
+The HelicsGatewayImplementation.json file was modified from the GatewayImplementation.json file (ucef-gateway/test-federation/ExampleGateway/conf/GatewayImplementation.json) that was downloaded as part of the ucef-gateway repository.
+The ucef-gateway repository was cloned from here: https://github.com/usnistgov/ucef-gateway.git
+The code on the feature/refactor branch of the ucef-gateway repository was used.
+
+The License of the ucef-gateway repository has been copied in the "Third Party License" directory of this repo.
+
+Copyright © 2017-2018,
+Alliance for Sustainable Energy, LLC
+All rights reserved.
+
+2. `HelicsHLAGatewayTest.xml`
+
+The HelicsHLAGatewayTest.xml file was modified from the GatewayTest.xml file (ucef-gateway/test-federation/ExampleGateway/conf/GatewayTest.xml) that was downloaded as part of the ucef-gateway repository.
+The ucef-gateway repository was cloned from here: https://github.com/usnistgov/ucef-gateway.git
+The code on the feature/refactor branch of the ucef-gateway repository was used.
+
+The License of the ucef-gateway repository has been copied in the "Third Party License" directory of this repo.
+
+Copyright © 2017-2018,
+Alliance for Sustainable Energy, LLC
+All rights reserved.
+
+3. `experimentConfig.json`
+
+The experimentConfig.json file was modified from the original experimentConfig.json file (/ucef-gateway/test-federation/GatewayTest_deployment/conf/experimentConfig.json) that was downloaded as part of the ucef-gateway repository.
+The ucef-gateway repository was cloned from here: https://github.com/usnistgov/ucef-gateway.git
+The code on the feature/refactor branch of the ucef-gateway repository was used.
+
+The License of the ucef-gateway repository has been copied in the "Third Party License" directory of this repo.
+
+Copyright © 2017-2018,
+Alliance for Sustainable Energy, LLC
+All rights reserved.
+
+4. `GatewayTest.fed`
+
+The GatewayTest.fed file was modified from the original GatewayTest.fed file (ucef-gateway/test-federation/GatewayTest_deployment/fom/GatewayTest.fed) that was downloaded as part of the ucef-gateway repository.
+The ucef-gateway repository was cloned from here: https://github.com/usnistgov/ucef-gateway.git
+The code on the feature/refactor branch of the ucef-gateway repository was used.
+
+The License of the ucef-gateway repository has been copied in the "Third Party License" directory of this repo.
+
+Copyright © 2017-2018,
+Alliance for Sustainable Energy, LLC
+All rights reserved.
+
+5. `pom.xml`
+The pom.xml file was modified from the original pom.xml file (ucef-gateway/test-federation/ExampleGateway/pom.xml) that was downloaded as part of the ucef-gateway repository.
+The ucef-gateway repository was cloned from here: https://github.com/usnistgov/ucef-gateway.git
+The code on the feature/refactor branch of the ucef-gateway repository was used.
+
+The License of the ucef-gateway repository has been copied in the "Third Party License" directory of this repo.
+
+Copyright © 2017-2018,
+Alliance for Sustainable Energy, LLC
+All rights reserved.
+
+6. `GatewayTest.xml`
+The GatewayTest.xml file was modified from the original GatewayTest.xml file (ucef-gateway/test-federation/GatewayTest_deployment/fom/GatewayTest.xml) that was downloaded as part of the ucef-gateway repository.
+The ucef-gateway repository was cloned from here: https://github.com/usnistgov/ucef-gateway.git
+The code on the feature/refactor branch of the ucef-gateway repository was used.
+
+The License of the ucef-gateway repository has been copied in the "Third Party License" directory of this repo.
+
+Copyright © 2017-2018,
+Alliance for Sustainable Energy, LLC
+All rights reserved.
+

@@ -1,0 +1,10 @@
+{
+  "federateName": "HelicsHLAGateway",
+  "federationId": "GatewayTest",
+  "fomFilepath": "conf/HelicsHLAGatewayTest.xml",
+  "isLateJoiner": false,
+  "lookAhead": 0.1,
+  "maxReconnectAttempts": 12,
+  "stepSize": 1.0,
+  "waitReconnectMs": 5000
+}
