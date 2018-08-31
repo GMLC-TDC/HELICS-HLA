@@ -140,18 +140,18 @@ The key features of the bridge code are explained next. The explanation of the f
 
 Fig. 3: Architecture of the HELICS-HLA Bridge (Block diagram, except the blue text boxes, is from this paper, which introduced the ucef-gateway - `T. Roth and M. Burns, "A gateway to easily integrate simulation platforms for co-simulation of cyber-physical systems," 2018 Workshop on Modeling and Simulation of Cyber-Physical Energy Systems (MSCPES), Porto, Portugal, 2018, pp. 1-6.`)
 
-**1.Creating the `HelicsPublications` Object Class**
+**1. Creating the `HelicsPublications` Object Class**
 
 The `HelicsPublications` object class acts as the container for all the HELICS publications that are of interest to the HLA federation. Its attribute names must be identical to the HELICS value federate publications key names in the HELICS federation. Since this class is only published by the HELICS-HLA bridge, a unique object instance name for this class is not required although it can be provided if desired.  This class must be included in the SOMs of all the HLA federates that wish to receive the HELICS federation publications.
 The java code for this object class can be automatically generated using WebGME. This class should also be defined in the simulation object model (SOM) of the HELICS-HLA bridge, and in the federation object model (FOM) of the federation of which the HELICS-HLA bridge is a part.
 
-**2.Create HELICS publications and subscriptions in HELICS federation federates**
+**2. Create HELICS publications and subscriptions in HELICS federation federates**
 
 The HELICS federation publications and subscriptions that will directly participate in the HELICS-HLA co-simulations (likely to be a small fraction of the total HELICS federation publications and subscriptions) must be registered with unique keys in the HELICS federates such that a one-to-one mapping can be created between the HELICS publications and subscriptions in the HELICS federates and the HELICS subscriptions and publications in the HELICS-HLA bridge.
 This is done by creating the publication and subscription keys as Portico object instance name + attribute name pairs. e.g., continuing from the example discussed earlier, HELICS subscriptions should be named `nodeD1_vmag` and `nodeD2_vmag`. As was explained earlier, the uniqueness of the HLA object instance names will ensure that these HELICS subscriptions will be unique in the HLA federation. The uniqueness of these keys in the HELICS federation must be ensured. The apriori determination and agreement on the object instance and attribute names as discussed under `Assumptions` above will prevent such duplication.
 The HELICS publications for the Portico federation, or HLA subscriptions from HELICS, should also be created. The keys for these HELICS publications should be identical to the HelicsPublications object class attribute names as discussed in point 1 above.
 
-**3.Create HELICS publications and subscriptions in the HELICS-HLA bridge**
+**3. Create HELICS publications and subscriptions in the HELICS-HLA bridge**
 
 In the HELICS-HLA bridge, the HELICS federation publications that are participating in the HELICS-HLA co-simulations become the HELICS subscriptions with identical keys, types, and units. Similarly, the HELICS federation subscriptions become the HELICS publications in the HELICS-HLA bridge.
 
