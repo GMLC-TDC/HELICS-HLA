@@ -1,5 +1,7 @@
 # HELICS-HLA (Portico) Co-Simulation Prototype Bridge
 
+**NOTE**: The HELICS code in this repository is from HELICS Version: 1.3.0 (07-31-18)
+
 This document describes how a Portico federation [1], which is based on the High Level Architecture (HLA) and designed using the Universal CPS Environment for Federation (UCEF), can be interfaced with a co-simulation federation developed using the Hierarchical Engine for Large-scale Infrastructure Co-Simulation (HELICS). This document focuses on:
 
 - Building HELICS in the UCEF virtual machine
