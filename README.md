@@ -10,7 +10,7 @@ This document describes how a Portico federation [1], which is based on the High
 
 ## A. Building HELICS on the UCEF Virtual Machine
 
-The Portico federation designed using UCEF works inside a virtual machine. To build HELICS on the UCEF Virtual machine (Ubuntu 14 is the OS on this machine), the Ubuntu installation instructions of HELICS (https://github.com/GMLC-TDC/HELICS-src) may not work as those instructions are for Ubuntu 16 or newer, which come with new:
+The Portico federation designed using UCEF works inside a virtual machine. To build HELICS on the UCEF Virtual machine (Ubuntu 14 is the OS on this machine), the Ubuntu installation instructions of HELICS (https://github.com/GMLC-TDC/HELICS) may not work as those instructions are for Ubuntu 16 or newer, which come with new:
 
 - C++ and C compilers (default on Ubuntu 16 seems to be gcc 5.1.3)
 - CMake version
@@ -195,8 +195,8 @@ The ucef-gateway project is installed inside the UCEF virtual machine. UCEF is a
 
 3. copy the HELICS files into the example gateway
 
-    (i). `cp HELICS-src/build/swig/java/*.java ucef-gateway/test-federation/ExampleGateway/src/main/java/com/java/helics/`
-    (ii). `cp HELICS-src/build/swig/java/libJNIhelics.so ucef-gateway/test-federation/ExampleGateway/src/main/resources/`
+    (i). `cp HELICS/build/swig/java/*.java ucef-gateway/test-federation/ExampleGateway/src/main/java/com/java/helics/`
+    (ii). `cp HELICS/build/swig/java/libJNIhelics.so ucef-gateway/test-federation/ExampleGateway/src/main/resources/`
 
 4. integrate HELICS into the example gateway
 
@@ -218,11 +218,11 @@ The ucef-gateway project is installed inside the UCEF virtual machine. UCEF is a
 
 5. HELICS single C++ Federate Federation
 
-    Copy the `helics_fed1.cpp` file from the `HELICS-HLA` repository and paste it inside the `examples` folder of the `HELICS-src` repository (` HELICS-src/examples/CppInterface`). Also copy the `CMakeLists.txt` file from the `ConfigurationFiles` folder of the `HELICS-HLA` repository to the `HELICS-src/examples/CppInterface` folder.
+    Copy the `helics_fed1.cpp` file from the `HELICS-HLA` repository and paste it inside the `examples` folder of the `HELICS` repository (` HELICS/examples/CppInterface`). Also copy the `CMakeLists.txt` file from the `ConfigurationFiles` folder of the `HELICS-HLA` repository to the `HELICS/examples/CppInterface` folder.
 
 6. Run the modified test federation
 
-    First build the HELICS federation by opening a command prompt, going to ` HELICS-src/build/examples/CppInterface` and executing the `make` command to build the `helics_fed1` example . Next, build the `modified test-federation` by executing `. build.sh` from here :` ucef-gateway/test-federation`.
+    First build the HELICS federation by opening a command prompt, going to ` HELICS/build/examples/CppInterface` and executing the `make` command to build the `helics_fed1` example . Next, build the `modified test-federation` by executing `. build.sh` from here :` ucef-gateway/test-federation`.
 
     Once the HELICS and HLA (Portico) federations are built, execute `./helics_fed1_cpp`. This will start the HELICS federation. Next, start the test federation by executing `. run.sh` from here: ` ucef-gateway/test-federation`.
 
