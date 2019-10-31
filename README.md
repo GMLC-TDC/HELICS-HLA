@@ -256,3 +256,8 @@ Fig. 6: One complete sequence of data exchange between the HELICS and HLA federa
 
 [3]. https://github.com/usnistgov/ucef-gateway
 
+## Release
+HELICS-Use-Cases are distributed under the terms of the BSD-3 clause license. All new
+contributions must be made under this license. [LICENSE](LICENSE)
+
+SPDX-License-Identifier: BSD-3-Clause
