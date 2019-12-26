@@ -6,7 +6,7 @@
 #
 # The License of the ucef-gateway repository has been copied in the "Third Party License" directory of this repo (file name is "LICENSE").
 #
-# Copyright © 2017-2018,
+# Copyright (c) 2017-2018,
 # Alliance for Sustainable Energy, LLC
 # All rights reserved.
 
